@@ -6,7 +6,6 @@ link_start!()
 
 selector> ast
 ast> 1 + 1
-ast> 1 + 1
 Expr
   head: Symbol call
   args: Array{Any}((3,))
