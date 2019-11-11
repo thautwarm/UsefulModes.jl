@@ -16,8 +16,13 @@ register() do
     enter_mode!(modes[:selector])
 end
 
-link_start!() =
+link_start!() = begin
     for each in fs
         each()
     end
+    println("available modes:")
+    for each in keys(modes)
+        print(each, " ")
+    end
+end
 end # module
